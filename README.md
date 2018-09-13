@@ -3,5 +3,5 @@
 This repo contains Mathematica codes i wrote to easily plot complex exponentials.
 
 [website](http://entc.ml/complex_exponentials)
-![summary](http://ramith.fyi/sm.png)
+![summary](https://github.com/ramithuh/Signal-and-Systems-Experiments/blob/master/sample.png?raw=true)
 
