@@ -1,0 +1,439 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     17974,        431]
+NotebookOptionsPosition[     17015,        407]
+NotebookOutlinePosition[     17370,        423]
+CellTagsIndexPosition[     17327,        420]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"c", "=", "0.15"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"r", "=", "0.3"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"\[Omega]", "=", "2"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"a", "=", 
+    RowBox[{"r", "+", 
+     RowBox[{"\[ImaginaryI]", " ", "\[Omega]"}]}]}], ";"}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{"sample", " ", "values"}], " ", "*)"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"xr", "=", 
+   RowBox[{"2", " ", "\[Pi]"}]}], " ", ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"yr", "=", "1"}], ";"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"wf", "[", "x_", "]"}], ":=", 
+   RowBox[{"c", " ", 
+    SuperscriptBox["\[ExponentialE]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"r", "+", 
+        RowBox[{"\[ImaginaryI]", " ", "\[Omega]"}]}], ")"}], " ", "x"}]]}]}], 
+  ";", " ", 
+  RowBox[{"(*", " ", "function", " ", "*)"}], "\n", 
+  RowBox[{"Manipulate", "[", 
+   RowBox[{
+    RowBox[{"Plot", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"Re", "[", 
+        RowBox[{"c", " ", 
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"r", "+", 
+             RowBox[{"\[ImaginaryI]", " ", "\[Omega]"}]}], ")"}], " ", 
+           "x"}]]}], "]"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", 
+        RowBox[{
+         RowBox[{"-", "1"}], "*", "xr"}], ",", "xr"}], "}"}], ",", 
+      RowBox[{"PlotLegends", "\[Rule]", 
+       RowBox[{
+       "{", "\"\<Real Part of the Complex Exponential c \!\(\*SuperscriptBox[\
+\(\[ExponentialE]\), \(\((r + \[ImaginaryI]\\\ \[Omega])\)\\\ x\)]\)\>\"", 
+        "}"}]}], ",", 
+      RowBox[{"PlotRange", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "1"}], "*", "yr"}], ",", "yr"}], "}"}]}], ",", 
+      RowBox[{"PlotLabel", "\[Rule]", " ", 
+       RowBox[{"Style", "[", 
+        RowBox[{
+        "\"\<Real Part of  => c \!\(\*SuperscriptBox[\(\[ExponentialE]\), \
+\(\((r + \[ImaginaryI]\\\ \[Omega])\)\\\ x\)]\)\>\"", ",", 
+         RowBox[{"FontSize", "\[Rule]", "20"}], ",", " ", 
+         RowBox[{"FontColor", "\[Rule]", "Red"}]}], "]"}]}], ",", 
+      RowBox[{"PlotLabels", "\[Rule]", 
+       RowBox[{"StringForm", "[", 
+        RowBox[{
+        "\"\<\[Omega] = `1` , r = `2` , c = `3`\>\"", " ", ",", "\[Omega]", 
+         ",", "r", ",", "c"}], "]"}]}], ",", 
+      RowBox[{"Background", "\[Rule]", "LightGreen"}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"\[Omega]", ",", "2"}], "}"}], ",", 
+      RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"r", ",", "0.3"}], "}"}], ",", 
+      RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"c", ",", "0.15"}], "}"}], ",", 
+      RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"xr", ",", 
+        RowBox[{"2", "*", "Pi"}], ",", "\"\<Expand X axis\>\""}], "}"}], ",", 
+      "0", ",", 
+      RowBox[{"4", "*", "Pi"}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"yr", ",", "1", ",", "\"\<Expand Y axis\>\""}], "}"}], ",", 
+      "0", ",", "10"}], "}"}]}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.745833551441496*^9, 3.745833772082806*^9}, {
+  3.745833808361002*^9, 3.745833817996887*^9}, {3.745833916108285*^9, 
+  3.7458339175299807`*^9}, {3.745833984392215*^9, 3.745834061459778*^9}, {
+  3.745834107387972*^9, 3.745834146145294*^9}, {3.745834218289818*^9, 
+  3.745834301806628*^9}, {3.745834336326846*^9, 3.745834425757873*^9}, {
+  3.745834458016015*^9, 3.74583455279021*^9}, {3.745835334488751*^9, 
+  3.7458354581209583`*^9}, {3.745835519439715*^9, 3.7458355340638247`*^9}, {
+  3.7458356809175777`*^9, 3.7458357176268587`*^9}, {3.745835748301141*^9, 
+  3.745835961468005*^9}, {3.745836061690762*^9, 3.7458361216689253`*^9}, {
+  3.745836221364949*^9, 3.745836421093439*^9}, {3.745836471904387*^9, 
+  3.7458365204814157`*^9}, {3.7458365767669983`*^9, 3.745836581691084*^9}, {
+  3.7458366421117773`*^9, 3.7458366877320423`*^9}, {3.745836717750239*^9, 
+  3.7458367898233423`*^9}},
+ CellLabel->
+  "In[389]:=",ExpressionUUID->"e5d099dd-6c06-41f6-a471-df03f6d27ca4"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`c$$ = 0.15, $CellContext`r$$ = 
+    0.3, $CellContext`xr$$ = 2 Pi, $CellContext`yr$$ = 
+    1, $CellContext`\[Omega]$$ = 2, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`\[Omega]$$], 2}, -10, 10}, {{
+       Hold[$CellContext`r$$], 0.3}, -1, 1}, {{
+       Hold[$CellContext`c$$], 0.15}, -1, 1}, {{
+       Hold[$CellContext`xr$$], 2 Pi, "Expand X axis"}, 0, 4 Pi}, {{
+       Hold[$CellContext`yr$$], 1, "Expand Y axis"}, 0, 10}}, 
+    Typeset`size$$ = {682., {77., 82.}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`\[Omega]$100798$$ = 0, $CellContext`r$100799$$ = 
+    0, $CellContext`c$100800$$ = 0, $CellContext`xr$100801$$ = 
+    0, $CellContext`yr$100802$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`c$$ = 0.15, $CellContext`r$$ = 
+        0.3, $CellContext`xr$$ = 2 Pi, $CellContext`yr$$ = 
+        1, $CellContext`\[Omega]$$ = 2}, "ControllerVariables" :> {
+        Hold[$CellContext`\[Omega]$$, $CellContext`\[Omega]$100798$$, 0], 
+        Hold[$CellContext`r$$, $CellContext`r$100799$$, 0], 
+        Hold[$CellContext`c$$, $CellContext`c$100800$$, 0], 
+        Hold[$CellContext`xr$$, $CellContext`xr$100801$$, 0], 
+        Hold[$CellContext`yr$$, $CellContext`yr$100802$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Plot[{
+         Re[$CellContext`c$$ 
+          E^(($CellContext`r$$ + 
+             I $CellContext`\[Omega]$$) $CellContext`x)]}, {$CellContext`x, \
+-$CellContext`xr$$, $CellContext`xr$$}, 
+        PlotLegends -> {
+         "Real Part of the Complex Exponential c \!\(\*SuperscriptBox[\(\
+\[ExponentialE]\), \(\((r + \[ImaginaryI]\\ \[Omega])\)\\ x\)]\)"}, 
+        PlotRange -> {-$CellContext`yr$$, $CellContext`yr$$}, PlotLabel -> 
+        Style["Real Part of  => c \!\(\*SuperscriptBox[\(\[ExponentialE]\), \
+\(\((r + \[ImaginaryI]\\ \[Omega])\)\\ x\)]\)", FontSize -> 20, FontColor -> 
+          Red], PlotLabels -> 
+        StringForm[
+         "\[Omega] = `1` , r = `2` , c = `3`", $CellContext`\[Omega]$$, \
+$CellContext`r$$, $CellContext`c$$], Background -> LightGreen], 
+      "Specifications" :> {{{$CellContext`\[Omega]$$, 2}, -10, 
+         10}, {{$CellContext`r$$, 0.3}, -1, 1}, {{$CellContext`c$$, 0.15}, -1,
+          1}, {{$CellContext`xr$$, 2 Pi, "Expand X axis"}, 0, 4 
+         Pi}, {{$CellContext`yr$$, 1, "Expand Y axis"}, 0, 10}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{727., {178., 184.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.745835962458407*^9, {3.7458360712694893`*^9, 3.745836089887866*^9}, 
+   3.745836128598792*^9, {3.745836248744658*^9, 3.745836256287697*^9}, 
+   3.7458362875379763`*^9, {3.745836335720888*^9, 3.7458364216236687`*^9}, 
+   3.7458364790380077`*^9, 3.7458365208933973`*^9, 3.745836583541409*^9, {
+   3.745836664045761*^9, 3.745836690589714*^9}, {3.745836748733142*^9, 
+   3.7458367906644173`*^9}},
+ CellLabel->
+  "Out[395]=",ExpressionUUID->"8375e249-52fd-4ac7-b781-10e79471e857"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"\[AliasDelimiter]", "\[AliasDelimiter]"}]], "Input",
+ CellChangeTimes->{{3.745836590914322*^9, 
+  3.745836591104644*^9}},ExpressionUUID->"fec94334-cb30-4150-962f-\
+92e6bebc5cfe"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.745834573950707*^9, 3.745834582154768*^9}, {
+   3.74583466564074*^9, 3.745834708395941*^9}, 
+   3.745835565927236*^9},ExpressionUUID->"5453042d-1218-4f03-9ed5-\
+b41b879f567f"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"c", "=", "0.15"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"r", "=", "0.3"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"\[Omega]", "=", "2"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"a", "=", 
+    RowBox[{"r", "+", 
+     RowBox[{"\[ImaginaryI]", " ", "\[Omega]"}]}]}], ";", " ", 
+   RowBox[{"(*", " ", 
+    RowBox[{"sample", " ", "values"}], " ", "*)"}], "\n", 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"wf", "[", "x_", "]"}], ":=", 
+    RowBox[{"c", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"r", "+", 
+         RowBox[{"\[ImaginaryI]", " ", "\[Omega]"}]}], ")"}], " ", "x"}]]}]}],
+    ";"}], " ", 
+  RowBox[{"(*", " ", "function", " ", "*)"}]}], "\n", 
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"DiscretePlot", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"Re", "[", 
+       RowBox[{"c", " ", 
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"r", "+", 
+            RowBox[{"\[ImaginaryI]", " ", "\[Omega]"}]}], ")"}], " ", 
+          "x"}]]}], "]"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "10"}], ",", "10"}], " ", "}"}], ",", 
+     RowBox[{"PlotLegends", "\[Rule]", 
+      RowBox[{"{", "\"\<Real Part of the Complex Exponential\>\"", "}"}]}], 
+     ",", 
+     RowBox[{"PlotRange", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "1"}], ",", "1"}], "}"}]}], ",", 
+     RowBox[{"PlotLabel", "\[Rule]", 
+      RowBox[{"StringForm", "[", 
+       RowBox[{
+       "\"\<\[Omega] = `1` , r = `2` , c = `3`\>\"", " ", ",", "\[Omega]", 
+        ",", "r", ",", "c"}], "]"}]}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\[Omega]", ",", "2"}], "}"}], ",", 
+     RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"r", ",", "0.3"}], "}"}], ",", 
+     RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"c", ",", "0.15"}], "}"}], ",", 
+     RowBox[{"-", "1"}], ",", "1"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.745835571068408*^9, 3.745835573251546*^9}, {
+  3.745836137089322*^9, 3.7458361718552027`*^9}, {3.745836939135849*^9, 
+  3.745836939405786*^9}, {3.7458375795663652`*^9, 3.745837579733302*^9}, {
+  3.745837707431476*^9, 3.745837751186767*^9}},
+ CellLabel->
+  "In[538]:=",ExpressionUUID->"67d45258-17fc-4978-b027-5af0ceddb36e"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`c$$ = 0.15, $CellContext`r$$ = 
+    0.3, $CellContext`\[Omega]$$ = 2, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`\[Omega]$$], 2}, -10, 10}, {{
+       Hold[$CellContext`r$$], 0.3}, -1, 1}, {{
+       Hold[$CellContext`c$$], 0.15}, -1, 1}}, Typeset`size$$ = {
+    615., {122., 127.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`\[Omega]$150365$$ = 
+    0, $CellContext`r$150366$$ = 0, $CellContext`c$150367$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`c$$ = 0.15, $CellContext`r$$ = 
+        0.3, $CellContext`\[Omega]$$ = 2}, "ControllerVariables" :> {
+        Hold[$CellContext`\[Omega]$$, $CellContext`\[Omega]$150365$$, 0], 
+        Hold[$CellContext`r$$, $CellContext`r$150366$$, 0], 
+        Hold[$CellContext`c$$, $CellContext`c$150367$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> DiscretePlot[{
+         Re[$CellContext`c$$ 
+          E^(($CellContext`r$$ + 
+             I $CellContext`\[Omega]$$) $CellContext`x)]}, {$CellContext`x, \
+-10, 10}, PlotLegends -> {"Real Part of the Complex Exponential"}, 
+        PlotRange -> {-1, 1}, PlotLabel -> 
+        StringForm[
+         "\[Omega] = `1` , r = `2` , c = `3`", $CellContext`\[Omega]$$, \
+$CellContext`r$$, $CellContext`c$$]], 
+      "Specifications" :> {{{$CellContext`\[Omega]$$, 2}, -10, 
+         10}, {{$CellContext`r$$, 0.3}, -1, 1}, {{$CellContext`c$$, 0.15}, -1,
+          1}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{660., {195., 201.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.745837741784968*^9, 3.745837751802698*^9}},
+ CellLabel->
+  "Out[542]=",ExpressionUUID->"3cc272ad-e4e6-46e9-9d34-5059fcb642f6"]
+}, Open  ]],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`c$$ = 0.15, $CellContext`r$$ = 
+    0.3, $CellContext`\[Omega]$$ = 2, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`\[Omega]$$], 2}, -10, 10}, {{
+       Hold[$CellContext`r$$], 0.3}, -1, 1}, {{
+       Hold[$CellContext`c$$], 0.15}, -1, 1}}, Typeset`size$$ = {
+    742., {162., 166.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`\[Omega]$149266$$ = 
+    0, $CellContext`r$149267$$ = 0, $CellContext`c$149268$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`c$$ = 0.15, $CellContext`r$$ = 
+        0.3, $CellContext`\[Omega]$$ = 2}, "ControllerVariables" :> {
+        Hold[$CellContext`\[Omega]$$, $CellContext`\[Omega]$149266$$, 0], 
+        Hold[$CellContext`r$$, $CellContext`r$149267$$, 0], 
+        Hold[$CellContext`c$$, $CellContext`c$149268$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> DiscretePlot[{
+         Re[$CellContext`c$$ 
+          E^(($CellContext`r$$ + 
+             I $CellContext`\[Omega]$$) $CellContext`x)]}, {$CellContext`x, \
+(-2) Pi, 5}, PlotLegends -> {"Real Part of the Complex Exponential"}, 
+        PlotRange -> {-1, 1}, PlotLabel -> 
+        StringForm[
+         "\[Omega] = `1` , r = `2` , c = `3`", $CellContext`\[Omega]$$, \
+$CellContext`r$$, $CellContext`c$$]], 
+      "Specifications" :> {{{$CellContext`\[Omega]$$, 2}, -10, 
+         10}, {{$CellContext`r$$, 0.3}, -1, 1}, {{$CellContext`c$$, 0.15}, -1,
+          1}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{787., {235., 241.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Input",
+ CellChangeTimes->{{3.7458377363257523`*^9, 
+  3.7458377367000227`*^9}},ExpressionUUID->"f29d2df6-34e0-46dd-999e-\
+abd7750f75a7"]
+},
+WindowSize->{953, 651},
+WindowMargins->{{Automatic, 24}, {-36, Automatic}},
+FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
+2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 4406, 114, 356, "Input",ExpressionUUID->"e5d099dd-6c06-41f6-a471-df03f6d27ca4"],
+Cell[4989, 138, 3867, 72, 381, "Output",ExpressionUUID->"8375e249-52fd-4ac7-b781-10e79471e857"]
+}, Open  ]],
+Cell[8871, 213, 202, 4, 30, "Input",ExpressionUUID->"fec94334-cb30-4150-962f-92e6bebc5cfe"],
+Cell[9076, 219, 224, 4, 30, "Input",ExpressionUUID->"5453042d-1218-4f03-9ed5-b41b879f567f"],
+Cell[CellGroupData[{
+Cell[9325, 227, 2531, 73, 226, "Input",ExpressionUUID->"67d45258-17fc-4978-b027-5af0ceddb36e"],
+Cell[11859, 302, 2577, 50, 473, "Output",ExpressionUUID->"3cc272ad-e4e6-46e9-9d34-5059fcb642f6"]
+}, Open  ]],
+Cell[14451, 355, 2560, 50, 491, InheritFromParent,ExpressionUUID->"f29d2df6-34e0-46dd-999e-abd7750f75a7"]
+}
+]
+*)
+
