@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      9829,        240]
-NotebookOptionsPosition[      9391,        223]
-NotebookOutlinePosition[      9745,        239]
-CellTagsIndexPosition[      9702,        236]
+NotebookDataLength[     10280,        249]
+NotebookOptionsPosition[      9843,        232]
+NotebookOutlinePosition[     10196,        248]
+CellTagsIndexPosition[     10153,        245]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -33,9 +33,11 @@ Cell[BoxData[{
          RowBox[{"\[ImaginaryI]", " ", "\[Omega]"}]}], ")"}], " ", "x"}]]}]}],
     ";"}], " ", 
   RowBox[{"(*", " ", "function", " ", "*)"}]}], "\n", 
- RowBox[{"Manipulate", "[", 
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
   RowBox[{
-   RowBox[{"Show", "[", 
+   RowBox[{"Show", "[", "\[IndentingNewLine]", 
+    RowBox[{"(*", " ", 
+     RowBox[{"plot", " ", "1"}], " ", "*)"}], "\[IndentingNewLine]", 
     RowBox[{
      RowBox[{"Plot", "[", 
       RowBox[{
@@ -75,7 +77,9 @@ Cell[BoxData[{
          "\"\<\[Omega] = `1` , r = `2` , c = `3`\>\"", " ", ",", "\[Omega]", 
           ",", "r", ",", "c"}], "]"}]}], ",", 
        RowBox[{"Background", "\[Rule]", "LightGreen"}]}], "]"}], ",", 
-     "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     "\[IndentingNewLine]", 
+     RowBox[{"(*", " ", 
+      RowBox[{"plot", " ", "2"}], " ", "*)"}], "\[IndentingNewLine]", 
      RowBox[{"DiscretePlot", "[", 
       RowBox[{
        RowBox[{"{", 
@@ -126,8 +130,8 @@ Cell[BoxData[{
    RowBox[{"{", 
     RowBox[{
      RowBox[{"{", 
-      RowBox[{"yr", ",", "1", ",", "\"\<Expand Y axis\>\""}], "}"}], ",", "1",
-      ",", "10", ",", "1"}], "}"}]}], "]"}]}], "Input",
+      RowBox[{"yr", ",", "1", ",", "\"\<Expand Y axis\>\""}], "}"}], ",", 
+     "0.2", ",", "10", ",", "1"}], "}"}]}], "]"}]}], "Input",
  CellChangeTimes->{{3.745837340404995*^9, 3.745837452467895*^9}, {
    3.745837496997591*^9, 3.74583749729432*^9}, {3.745837768509224*^9, 
    3.7458377822596483`*^9}, {3.745837872659309*^9, 3.745837898554153*^9}, {
@@ -135,37 +139,40 @@ Cell[BoxData[{
    3.745838194665888*^9}, {3.745838227809689*^9, 3.7458383005886507`*^9}, {
    3.7458384241061296`*^9, 3.7458384318706713`*^9}, 3.74583849769144*^9, {
    3.7458388317914553`*^9, 3.7458388611735697`*^9}, {3.745838976524337*^9, 
-   3.745838979910933*^9}, {3.745839887371023*^9, 3.745839887617043*^9}},
- CellLabel->"In[1]:=",ExpressionUUID->"04bd6b06-9f3f-4c85-99e6-ff6e21fd4402"],
+   3.745838979910933*^9}, {3.745839887371023*^9, 3.745839887617043*^9}, {
+   3.745842205851077*^9, 3.745842272575179*^9}, {3.745842311229478*^9, 
+   3.7458423113975277`*^9}},ExpressionUUID->"04bd6b06-9f3f-4c85-99e6-\
+ff6e21fd4402"],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`c$$ = 0.15, $CellContext`r$$ = 
-    0, $CellContext`xr$$ = 9, $CellContext`yr$$ = 1, $CellContext`\[Omega]$$ =
-     2, Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
-    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
-    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+   DynamicModuleBox[{$CellContext`c$$ = 0.3700000000000001, $CellContext`r$$ =
+     0.21, $CellContext`xr$$ = 9, $CellContext`yr$$ = 
+    2.2, $CellContext`\[Omega]$$ = 1.950000000000001, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
        Hold[$CellContext`\[Omega]$$], 2}, -10, 10}, {{
        Hold[$CellContext`r$$], 0.3}, -1, 1}, {{
        Hold[$CellContext`c$$], 0.15}, -1, 1}, {{
        Hold[$CellContext`xr$$], 9, "Expand X axis"}, 1, 10 Pi, 1}, {{
-       Hold[$CellContext`yr$$], 1, "Expand Y axis"}, 1, 10, 1}}, 
-    Typeset`size$$ = {893., {152., 156.}}, Typeset`update$$ = 0, 
+       Hold[$CellContext`yr$$], 1, "Expand Y axis"}, 0.2, 10, 1}}, 
+    Typeset`size$$ = {822., {116., 120.}}, Typeset`update$$ = 0, 
     Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`\[Omega]$2841$$ = 0, $CellContext`r$2842$$ = 
-    0, $CellContext`c$2843$$ = 0, $CellContext`xr$2844$$ = 
-    0, $CellContext`yr$2845$$ = 0}, 
+    True, $CellContext`\[Omega]$12038$$ = 0, $CellContext`r$12039$$ = 
+    0, $CellContext`c$12040$$ = 0, $CellContext`xr$12041$$ = 
+    0, $CellContext`yr$12042$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`c$$ = 0.15, $CellContext`r$$ = 
         0.3, $CellContext`xr$$ = 9, $CellContext`yr$$ = 
         1, $CellContext`\[Omega]$$ = 2}, "ControllerVariables" :> {
-        Hold[$CellContext`\[Omega]$$, $CellContext`\[Omega]$2841$$, 0], 
-        Hold[$CellContext`r$$, $CellContext`r$2842$$, 0], 
-        Hold[$CellContext`c$$, $CellContext`c$2843$$, 0], 
-        Hold[$CellContext`xr$$, $CellContext`xr$2844$$, 0], 
-        Hold[$CellContext`yr$$, $CellContext`yr$2845$$, 0]}, 
+        Hold[$CellContext`\[Omega]$$, $CellContext`\[Omega]$12038$$, 0], 
+        Hold[$CellContext`r$$, $CellContext`r$12039$$, 0], 
+        Hold[$CellContext`c$$, $CellContext`c$12040$$, 0], 
+        Hold[$CellContext`xr$$, $CellContext`xr$12041$$, 0], 
+        Hold[$CellContext`yr$$, $CellContext`yr$12042$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -199,9 +206,9 @@ $CellContext`r$$, $CellContext`c$$], Background -> LightGreen],
       "Specifications" :> {{{$CellContext`\[Omega]$$, 2}, -10, 
          10}, {{$CellContext`r$$, 0.3}, -1, 1}, {{$CellContext`c$$, 0.15}, -1,
           1}, {{$CellContext`xr$$, 9, "Expand X axis"}, 1, 10 Pi, 
-         1}, {{$CellContext`yr$$, 1, "Expand Y axis"}, 1, 10, 1}}, 
+         1}, {{$CellContext`yr$$, 1, "Expand Y axis"}, 0.2, 10, 1}}, 
       "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{938., {266., 272.}},
+     ImageSizeCache->{867., {230., 236.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -217,12 +224,14 @@ $CellContext`r$$, $CellContext`c$$], Background -> LightGreen],
    3.7458381906293383`*^9}, {3.745838229268745*^9, 3.745838295558179*^9}, {
    3.745838425289935*^9, 3.74583845384593*^9}, 3.745838549495517*^9, {
    3.7458388358533983`*^9, 3.745838888756798*^9}, {3.7458389770681067`*^9, 
-   3.745838980267064*^9}, {3.745839889244753*^9, 3.745839895222419*^9}},
- CellLabel->"Out[2]=",ExpressionUUID->"e5fd24d8-2064-4c04-a8f9-01bb2fef3234"]
+   3.745838980267064*^9}, {3.745839889244753*^9, 3.745839895222419*^9}, 
+   3.7458421924616213`*^9, {3.745842250535775*^9, 3.7458422730836887`*^9}, 
+   3.745842316482017*^9},
+ CellLabel->"Out[8]=",ExpressionUUID->"9caa7601-6cfa-47c4-854b-d531a846a741"]
 }, Open  ]]
 },
-WindowSize->{1147, 658},
-WindowMargins->{{20, Automatic}, {0, Automatic}},
+WindowSize->{1279, 756},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
 FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
 2018)",
 StyleDefinitions->"Default.nb"
@@ -239,8 +248,8 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 4511, 116, 234, "Input",ExpressionUUID->"04bd6b06-9f3f-4c85-99e6-ff6e21fd4402"],
-Cell[5094, 140, 4281, 80, 615, "Output",ExpressionUUID->"e5fd24d8-2064-4c04-a8f9-01bb2fef3234"]
+Cell[580, 22, 4807, 122, 278, "Input",ExpressionUUID->"04bd6b06-9f3f-4c85-99e6-ff6e21fd4402"],
+Cell[5390, 146, 4437, 83, 543, "Output",ExpressionUUID->"9caa7601-6cfa-47c4-854b-d531a846a741"]
 }, Open  ]]
 }
 ]
