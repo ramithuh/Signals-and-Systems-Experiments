@@ -1,6 +1,10 @@
 # Signal-and-Systems-Experiments
+![Work in Progress](https://img.shields.io/badge/Work-In--Progress-purple.svg?longCache=true&style=popout-square)
 
-This repo contains Mathematica codes i wrote to easily plot complex exponentials.
+This repo contains Wolfram Mathematica Notebooks, which i wrote to understand waveforms of Signals.
 
-<iframe src="https://www.wolframcloud.com/objects/ramithuh/Published/Discrete%20and%20Continous.nb?_embed=iframe" width="600" height="800"></iframe>
+
+
+[website](http://entc.ml/complex_exponentials)
+![summary](https://github.com/ramithuh/Signal-and-Systems-Experiments/blob/master/sample.png?raw=true)
 
