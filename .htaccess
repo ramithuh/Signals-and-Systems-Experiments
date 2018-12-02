@@ -1,0 +1,9 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^(www\.)?callx.azurewebsites\.net$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^(/.*)?$ http://blog.ramith.fyi/static$1 [L,R=301,NC,NE]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?callx.azurewebsites\.net$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^(.*)$ http://blog.ramith.fyi/$1 [L,R=301,NE]
