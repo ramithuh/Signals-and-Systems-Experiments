@@ -1,0 +1,1 @@
+function g = draw_histogram(R,bins)lower_bound=min(R);upper_bound=max(R);gap=(upper_bound-lower_bound)/bins;x =lower_bound:gap:upper_bound;y=zeros(1,length(x));for i=1:length(R)  id=floor((R(i)-lower_bound)/gap)+1;  y(id)=y(id)+1;endbar(x,y, 'BarWidth', 1);title('Histogram of the Received Signal')end

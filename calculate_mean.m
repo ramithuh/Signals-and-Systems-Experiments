@@ -1,0 +1,1 @@
+function g = calculate_mean(x)g=0;y = zeros(size(x));for i = 1:length(x)  %y(i) = sum(x==x(i));  g=g+x(i)*1/length(x);endend

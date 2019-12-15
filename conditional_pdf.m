@@ -1,0 +1,1 @@
+function new_pdf = conditional_pdf(R,pulses,A)s=pulses;s=(s==A);%disp(A)%disp(s(1:10))%disp(sum(s))length(s);length(R);temp=R.*s;id=1;new_pdf=zeros(1,sum(s));%disp(temp(1:10));for i=1:length(R)  if(temp(i)~=0)    new_pdf(id)=temp(i);    id=id+1;  endendend
